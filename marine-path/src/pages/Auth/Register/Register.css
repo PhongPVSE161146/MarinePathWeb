@@ -2,12 +2,14 @@
   min-height: 100vh;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
+  background-color: #0288d1; /* Nền xanh dương toàn màn hình nếu ảnh không load */
 }
 
 .register-left {
   flex: 1.5;
-  background-size: cover;            
-  background-position: center center; 
+  background-size: cover; /* Đảm bảo ảnh phủ toàn bộ */
+  background-position: center; /* Căn giữa */
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -16,8 +18,9 @@
   padding: 40px;
   color: #fff;
   position: relative;
+  min-height: 100vh; /* Đảm bảo chiều cao đủ */
+  background-image: url("../../../assets/marine-path.jpg"); /* Thay bằng ảnh của bạn, giống Login */
 }
-
 
 .register-overlay {
   position: absolute;
@@ -25,7 +28,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(2, 136, 209, 0.3); /* Overlay xanh dương như Login */
   z-index: 1;
 }
 
@@ -49,13 +52,11 @@
 
 .register-right {
   flex: 1;
-  background-size: cover;
-  background-position: center;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
-  background-image: url("https://images.unsplash.com/photo-1526045431048-c5e4e2a3d1c4");
 }
 
 .register-form-container {
@@ -63,9 +64,9 @@
   max-width: 400px;
   padding: 40px;
   border-radius: 16px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #fff; /* Giữ nền trắng như Login */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-  border: 1px solid #f3c6d3;
+  border: 1px solid #b3e5fc; /* Xanh nhạt như Login */
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -77,7 +78,7 @@
 }
 
 .register-title {
-  color: #c2185b;
+  color: #1976d2; /* Thay màu hồng bằng xanh dương như Login */
   text-align: center;
   margin-bottom: 0;
 }
@@ -85,17 +86,23 @@
 .register-subtext {
   text-align: center;
   font-size: 14px;
+  color: #666; /* Thêm màu phụ như Login */
 }
 
 .register-button {
-  background-color: #ec407a;
-  border-color: #ec407a;
+  background-color: #03a9f4; /* Thay màu hồng bằng xanh dương nhạt như Login */
+  border-color: #03a9f4;
+}
+
+.register-button:hover {
+  background-color: #01579b; /* Xanh dương đậm khi hover như Login */
+  border-color: #01579b;
 }
 
 .register-footer {
   text-align: center;
   font-size: 12px;
-  color: #aaa;
+  color: #78909c; /* Xám xanh như Login */
   margin-top: 20px;
 }
 
