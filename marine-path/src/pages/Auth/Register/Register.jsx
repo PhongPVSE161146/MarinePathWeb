@@ -2,7 +2,7 @@ import React from "react";
 import { Layout, Form, Input, Button, Typography, DatePicker, Select, Divider, Space } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import image1 from "../../../assets/images.jpg"; // Đảm bảo đường dẫn ảnh đúng
-import "./register.css";
+// import "./register.css";
 
 const { Title, Text, Link } = Typography;
 const { Content } = Layout;
