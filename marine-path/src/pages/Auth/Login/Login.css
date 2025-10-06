@@ -95,4 +95,10 @@
   font-size: 12px;
   color: #78909c;
   margin-top: 20px;
+} 
+.login-description {
+  color: #eee;
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 1.5;
 }
