@@ -7,7 +7,7 @@ import {
   FacebookFilled,
 } from "@ant-design/icons";
 import image2 from "../../../assets/images.jpg"; // Thay bằng ảnh phù hợp với chủ đề Marine Path
-// import "./login.css";
+import "./login.css";
 
 const { Title, Text, Link } = Typography;
 const { Content } = Layout;
