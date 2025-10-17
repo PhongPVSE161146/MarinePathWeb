@@ -2,7 +2,7 @@ import React from "react";
 import { Layout, Form, Input, Button, Typography, DatePicker, Select, Divider, Space } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import image1 from "../../../assets/images.jpg"; // Đảm bảo đường dẫn ảnh đúng
-// import "./register.css";
+import "./register.css";
 
 const { Title, Text, Link } = Typography;
 const { Content } = Layout;
@@ -16,14 +16,7 @@ const Register = () => {
         style={{ backgroundImage: `url(${image1})` }}
       >
         <div className="register-overlay" />
-        <div className="register-left-content">
-          <Title level={1}>DESIKI CARE</Title>
-          <Text className="register-description">
-            Desiki Care là thương hiệu chăm sóc da tiên phong kết hợp giữa vẻ
-            đẹp tự nhiên và khoa học hiện đại. Chúng tôi mang đến giải pháp làm
-            đẹp an toàn và hiệu quả dài lâu.
-          </Text>
-        </div>
+    
       </Content>
 
       <Content className="register-right">
